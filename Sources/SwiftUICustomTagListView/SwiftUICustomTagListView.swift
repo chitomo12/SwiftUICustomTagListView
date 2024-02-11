@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+/// A SwiftUI view that presents a customizable tag list.
 public struct SwiftUICustomTagListView<Content: View>: View {
     
+    /// An array of Tag View
     private let tagViews: [SwiftUICustomTagView<Content>]
+    /// Horizontal space between each tag
     private let horizontalSpace: CGFloat
+    /// Vertical space between each tag
     private let verticalSpace: CGFloat
     
     @State private var listHeight: CGFloat = 0
@@ -71,26 +75,30 @@ public struct SwiftUICustomTagListView<Content: View>: View {
     }
 }
 
+// MARK: - Sample
 struct SwiftUICustomTagListView_Previews: PreviewProvider {
     
-    static let tags: [String] = ["Apple", "Lemon", "Grape"]
+    static let data: [SampleTagViewData] = [
+        .init(text: "#Technology", color: Color(hex: "#ff4d4d")),
+        .init(text: "#News", color: Color(hex: "#b33636")),
+        .init(text: "#Politics", color: Color(hex: "#ff944d")),
+        .init(text: "#Breaking", color: Color(hex: "#ff4dd3")),
+    ]
     
-    static var views: [SwiftUICustomTagView<Button<Text>>] {
-        self.tags.map { tag in
+    static var views: [SwiftUICustomTagView<SampleTagView>] {
+        self.data.map { data in
             SwiftUICustomTagView(content: {
-                Button(action: {
-                    print(tag)
-                }, label: {
-                    Text(tag)
-                })
+                SampleTagView(data: data)
             })
         }
     }
     
     static var previews: some View {
-        SwiftUICustomTagListView(views, horizontalSpace: 8, verticalSpace: 8)
-            .frame(width: 140, height: 100, alignment: .top)
-            .background(Color.gray.opacity(0.2))
+        SwiftUICustomTagListView(views,
+                                 horizontalSpace: 8,
+                                 verticalSpace: 8)
+            .frame(width: 180, height: 180, alignment: .top)
+            .background(Color.gray.opacity(0.15))
             .previewLayout(.sizeThatFits)
     }
 }

@@ -13,7 +13,6 @@ public struct SwiftUICustomTagView<Content: View>: View, Hashable {
     @State private var content: Content
     
     public init(@ViewBuilder content: () -> Content) {
-//        self._view = State(initialValue: view)
         _content = State(initialValue: content())
     }
     
@@ -32,6 +31,6 @@ public struct SwiftUICustomTagView<Content: View>: View, Hashable {
 
 struct SwiftUICustomTagView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUICustomTagView(content: { Text("aaa") })
+        SwiftUICustomTagView(content: { Text("Sample") })
     }
 }
