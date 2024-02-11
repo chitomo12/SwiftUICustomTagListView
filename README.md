@@ -4,7 +4,17 @@
 
 Simple and customizable Tag List View for SwiftUI
 
-# How to use
+## Requirement
+- iOS 14.0 or later
+
+## Installation
+`SwiftUICustomTagListView` supports Swift Package Manager. Add `SwiftUICustomTagListView` as dependency in your `Package.swift`. 
+
+```
+.package(name: "SwiftUICustomTagListView", url: "https://github.com/chitomo12/SwiftUICustomTagListView.git", from: "0.2")
+```
+
+## How to use
 
 <img width="317" alt="image" src="https://github.com/chitomo12/SwiftUICustomTagListView/assets/37266869/6b3e07a5-005e-4238-90e7-41d1f427f509" align="right">
 
@@ -61,4 +71,4 @@ struct SampleTagViewData {
 ```
 
 ## License
-SwiftUICustomTagListView is available under the MIT license. See the LICENSE file for more info.
+`SwiftUICustomTagListView` is available under the MIT license. See the LICENSE file for more info.
