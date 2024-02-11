@@ -11,7 +11,7 @@ Simple and customizable Tag List View for SwiftUI
 `SwiftUICustomTagListView` supports Swift Package Manager. Add `SwiftUICustomTagListView` as dependency in your `Package.swift`. 
 
 ```
-.package(name: "SwiftUICustomTagListView", url: "https://github.com/chitomo12/SwiftUICustomTagListView.git", from: "0.2")
+.package(name: "SwiftUICustomTagListView", url: "https://github.com/chitomo12/SwiftUICustomTagListView.git")
 ```
 
 ## How to use
