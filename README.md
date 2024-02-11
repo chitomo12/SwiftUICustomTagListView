@@ -8,10 +8,19 @@ Simple and customizable Tag List View for SwiftUI
 - iOS 14.0 or later
 
 ## Installation
-`SwiftUICustomTagListView` supports Swift Package Manager. Add `SwiftUICustomTagListView` as dependency in your `Package.swift`. 
+
+### SwiftPackageManager
+Add `SwiftUICustomTagListView` as dependency in your `Package.swift`. 
 
 ```
 .package(name: "SwiftUICustomTagListView", url: "https://github.com/chitomo12/SwiftUICustomTagListView.git")
+```
+
+### Cocoapods
+Add `SwiftUICustomTagListView` in your `Podfile`.
+
+```
+pod 'SwiftUICustomTagListView'
 ```
 
 ## How to use
