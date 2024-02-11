@@ -18,11 +18,12 @@ struct SampleTagView: View {
     
     var body: some View {
         Text(data.text)
+            .font(.title2)
             .onTapGesture {
                 print("[Pressed] \(data.text)")
             }
             .foregroundColor(.white)
-            .padding(.all, 6)
+            .padding(.all, 8)
             .background(LinearGradient(
                 gradient: Gradient(colors: [data.color, data.color.opacity(0.6)]),
                 startPoint: .top,

@@ -83,6 +83,7 @@ struct SwiftUICustomTagListView_Previews: PreviewProvider {
         .init(text: "#News", color: Color(hex: "#b33636")),
         .init(text: "#Politics", color: Color(hex: "#ff944d")),
         .init(text: "#Breaking", color: Color(hex: "#ff4dd3")),
+        .init(text: "#Global", color: Color(hex: "#b33693")),
     ]
     
     static var views: [SwiftUICustomTagView<SampleTagView>] {
@@ -97,8 +98,7 @@ struct SwiftUICustomTagListView_Previews: PreviewProvider {
         SwiftUICustomTagListView(views,
                                  horizontalSpace: 8,
                                  verticalSpace: 8)
-            .frame(width: 180, height: 180, alignment: .top)
-            .background(Color.gray.opacity(0.15))
+            .frame(width: 240, height: 220, alignment: .top)
             .previewLayout(.sizeThatFits)
     }
 }
