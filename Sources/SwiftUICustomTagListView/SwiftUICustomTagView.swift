@@ -7,17 +7,18 @@
 
 import SwiftUI
 
-public struct SwiftUICustomTagView: View, Hashable {
+public struct SwiftUICustomTagView<Content: View>: View, Hashable {
     
-    let id = UUID()
-    @State var view: AnyView
+    private let id = UUID()
+    @State private var content: Content
     
-    public init(view: AnyView) {
-        self._view = State(initialValue: view)
+    public init(@ViewBuilder content: () -> Content) {
+//        self._view = State(initialValue: view)
+        _content = State(initialValue: content())
     }
     
     public var body: some View {
-        view
+        content
     }
     
     public static func == (lhs: SwiftUICustomTagView, rhs: SwiftUICustomTagView) -> Bool {
@@ -31,6 +32,6 @@ public struct SwiftUICustomTagView: View, Hashable {
 
 struct SwiftUICustomTagView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUICustomTagView(view: AnyView(Text("aaa")))
+        SwiftUICustomTagView(content: { Text("aaa") })
     }
 }
