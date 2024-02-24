@@ -1,11 +1,12 @@
 # SwiftUICustomTagListView
 
-![image](https://img.shields.io/badge/Platform-iOS14-orange.svg)
+![image](https://img.shields.io/badge/Platform-iOS14-orange.svg)  ![image](https://img.shields.io/badge/Platform-macOS12-orange.svg)
 
 Simple and customizable Tag List View for SwiftUI
 
 ## Requirement
 - iOS 14.0 or later
+- macOS 12.0 or later
 
 ## Installation
 
