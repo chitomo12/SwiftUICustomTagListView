@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftUICustomTagListView'
-  s.version          = '0.3'
+  s.version          = '0.4'
   s.summary          = 'Simple Tag List View for SwiftUI.'
   s.description      = "Simple and customizable Tag List View for SwiftUI."
   s.homepage         = 'https://github.com/chitomo12/SwiftUICustomTagListView'
