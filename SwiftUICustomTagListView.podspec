@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { 'chitomo12' => 'chitomo12@icloud.com' }
   s.source           = { :git => 'https://github.com/chitomo12/SwiftUICustomTagListView.git', :tag => s.version.to_s }
   s.ios.deployment_target = '14.0'
+  s.osx.deployment_target = '12.0'
   s.source_files = 'Sources/**/*.swift'
   s.swift_versions = ['5.0']
 end
